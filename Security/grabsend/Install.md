@@ -36,11 +36,13 @@ gksudo gedit /etc/pam.d/common-auth
 ```
 
 ###Locate the line below
-
+`
 auth	[success=1 default=ignore]	pam_unix.so nullok_secure
-
-####In this line change the success=1 to success=2
-
+`
+####In this line change the success=1 to success=2 like so
+`
+auth	[success=2 default=ignore]	pam_unix.so nullok_secure
+`
 ####add this line right after
 
 
